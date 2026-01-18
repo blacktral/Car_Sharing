@@ -1,6 +1,6 @@
 package ua.dnu.ffeks.prokhodetskv.carsharing.car_sharing.models;
 
-public class RentalService {
+public class Rental_Service {
     private int idRentalServices;
     private int rentId;
     private int idService;
@@ -10,17 +10,16 @@ public class RentalService {
     // Додаткові поля для красивого відображення в таблиці
     private String serviceName;
 
-    public RentalService() {}
+    public Rental_Service() {}
 
-    public RentalService(int idRentalServices, int rentId, int idService, int quantity, String serviceName, double priceAtMoment) {
+    public Rental_Service(int idRentalServices, int rentId, int idService, int quantity, double priceAtMoment) {
         this.idRentalServices = idRentalServices;
         this.rentId = rentId;
         this.idService = idService;
         this.quantity = quantity;
-        this.serviceName = serviceName;
         this.priceAtMoment = priceAtMoment;
-        this.serviceName = serviceName;
     }
+
 
     public int getIdRentalServices() {
         return idRentalServices;

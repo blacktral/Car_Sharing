@@ -1,14 +1,14 @@
 package ua.dnu.ffeks.prokhodetskv.carsharing.car_sharing.models;
 
-public class Service {
+public class Services {
     private int idService;
-    private String serviceName; // в БД колонка називається "service"
+    private String serviceName; // Це поле має геттер getServiceName()
     private String description;
     private double price;
 
-    public Service() {}
+    public Services() {}
 
-    public Service(int idService, String serviceName, String description, double price) {
+    public Services(int idService, String serviceName, String description, double price) {
         this.idService = idService;
         this.serviceName = serviceName;
         this.description = description;
@@ -45,5 +45,11 @@ public class Service {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    // Корисно для відображення у ComboBox, якщо знадобиться
+    @Override
+    public String toString() {
+        return serviceName;
     }
 }

@@ -1,4 +1,4 @@
-package ua.dnu.ffeks.prokhodetskv.carsharing.car_sharing;
+package ua.dnu.ffeks.prokhodetskv.carsharing.car_sharing.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
